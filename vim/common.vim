@@ -56,8 +56,8 @@ nmap <C-K> <C-w>k
 nmap <C-L> <C-w>l
 map Q <Nop>
 
-"Don't allow completeopt=preview
-"This wil show extra information about currently selected completion
+"不要设置completeopt=preview
+"代码补全时不要出现额外的窗口
 set completeopt=menu
 
 
@@ -106,10 +106,4 @@ set columns=120
 "语法高亮
 syntax on 
 syntax enable
-
-
-colorscheme solarized
-let g:solarized_termcolors=256
-
-set background=dark
 

@@ -5,6 +5,7 @@ set runtimepath+=$HOME/.vim
 source $HOME/.vim/vim/vundle.vim
 
 source $HOME/.vim/vim/common.vim
+source $HOME/.vim/vim/colortheme.vim
 source $HOME/.vim/vim/ctags.vim
 source $HOME/.vim/vim/doxygen.vim
 source $HOME/.vim/vim/emmet.vim
