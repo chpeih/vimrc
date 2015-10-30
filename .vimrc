@@ -10,4 +10,5 @@ source $HOME/.vim/vim/ctags.vim
 source $HOME/.vim/vim/doxygen.vim
 source $HOME/.vim/vim/emmet.vim
 source $HOME/.vim/vim/neocomplete.vim
+source $HOME/.vim/vim/javacomplete2.vim
 source $HOME/.vim/vim/tagbar.vim
