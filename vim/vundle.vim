@@ -23,6 +23,8 @@ Plugin 'mattn/emmet-vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'artur-shaik/vim-javacomplete2'
+Plugin 'Shougo/neosnippet'
+Plugin 'Shougo/neosnippet-snippets'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
