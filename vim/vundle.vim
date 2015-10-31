@@ -15,16 +15,32 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
+
+" C/C++ Completion
 Plugin 'Shougo/neocomplete'
+" Tagbar for class/function/macro
 Plugin 'majutsushi/tagbar'
+" Doxygen
 Plugin 'doxygen/doxygen'
+" Nerdtree
 Plugin 'scrooloose/nerdtree'
+" Web-mode Completion
 Plugin 'mattn/emmet-vim'
+" Color theme Solarized
 Plugin 'altercation/vim-colors-solarized'
+" PHP Completion
 Plugin 'shawncplus/phpcomplete.vim'
+" Java Completion
 Plugin 'artur-shaik/vim-javacomplete2'
+" Snippet
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
+" Fast Comment
+Plugin 'scrooloose/nerdcommenter'
+" Parenthese
+Plugin 'tpope/vim-surround'
+" EasyMotion
+Plugin 'easymotion/vim-easymotion'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
