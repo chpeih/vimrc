@@ -50,10 +50,11 @@ source $VIMRUNTIME/menu.vim
 language messages en_US.utf-8
 
 "Ctrl+hjkl在不同窗口下移动光标
-nmap <C-H> <C-w>h
-nmap <C-J> <C-w>j
-nmap <C-K> <C-w>k
-nmap <C-L> <C-w>l
+"与neosnippet快捷键冲突
+" nmap <C-H> <C-w>h
+" nmap <C-J> <C-w>j
+" nmap <C-K> <C-w>k
+" nmap <C-L> <C-w>l
 map Q <Nop>
 
 "不要设置completeopt=preview
@@ -65,9 +66,9 @@ set completeopt=menu
 set number
 "gvim下字体
 if has("win32")
-    set guifont=Monaco:h10
+    set guifont=Monaco:h11
 else 
-    set guifont=Monaco\ 10
+    set guifont=Monaco\ 11
 endif
 "gvim下隐藏工具栏
 set guioptions-=T
