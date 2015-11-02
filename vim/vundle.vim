@@ -41,6 +41,9 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-surround'
 " EasyMotion
 Plugin 'easymotion/vim-easymotion'
+" Python Completion
+Plugin 'davidhalter/jedi-vim'
+
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'

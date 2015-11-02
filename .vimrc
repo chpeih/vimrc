@@ -14,3 +14,4 @@ source $HOME/.vim/vim/neosnippet.vim
 source $HOME/.vim/vim/javacomplete2.vim
 source $HOME/.vim/vim/tagbar.vim
 source $HOME/.vim/vim/nerdtree.vim
+source $HOME/.vim/vim/jedi.vim
