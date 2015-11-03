@@ -52,6 +52,9 @@ Plugin 'tpope/vim-fugitive'
 " Buffer
 Plugin 'kien/ctrlp.vim'
 " Plugin 'Shougo/unite.vim'
+" Alignment
+Plugin 'godlygeek/tabular'
+
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
