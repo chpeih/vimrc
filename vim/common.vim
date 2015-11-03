@@ -77,10 +77,12 @@ set guioptions-=m
 "光标移动到buffer的顶部和底部时保持1行距离
 set scrolloff=1
 "不响警铃
-set noerrorbells 
+set noerrorbells
 set novisualbell
-set visualbell t_vb=  "关闭visual bell
-au GuiEnter * set t_vb= "关闭beep
+"关闭visual bell
+set visualbell t_vb=  
+"关闭beep
+au GuiEnter * set t_vb= 
 
 "c风格缩进
 set cindent 

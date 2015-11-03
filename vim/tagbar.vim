@@ -8,7 +8,7 @@
 nmap <F9> :TagbarToggle<cr> 
 "不同时显示多个文件的tag，只显示当前文件的
 let g:tagbar_right=1
-let g:tagbar_width=35
+let g:tagbar_width=30
 let g:tagbar_foldlevel=99
 let g:tagbar_show_visibility=1
 let g:tagbar_show_linenumbers=1
