@@ -16,7 +16,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 
-" C/C++ Completion
+" Auto Completion
 Plugin 'Shougo/neocomplete'
 " Tagbar for class/function/macro
 Plugin 'majutsushi/tagbar'
@@ -43,7 +43,15 @@ Plugin 'tpope/vim-surround'
 Plugin 'easymotion/vim-easymotion'
 " Python Completion
 Plugin 'davidhalter/jedi-vim'
-
+" C/C++ Completion
+Plugin 'Rip-Rip/clang_complete'
+" Beautiful front end
+Plugin 'bling/vim-airline'
+" Git
+Plugin 'tpope/vim-fugitive'
+" Buffer
+Plugin 'kien/ctrlp.vim'
+" Plugin 'Shougo/unite.vim'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
