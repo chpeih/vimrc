@@ -104,8 +104,8 @@ set foldmethod=indent
 set foldnestmax=10
 set foldlevel=10
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc':'zo')<CR> 
-set lines=30
-set columns=120
+set lines=35
+set columns=115
 "语法高亮
 syntax on 
 syntax enable
