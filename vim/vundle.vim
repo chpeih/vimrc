@@ -54,6 +54,13 @@ Plugin 'kien/ctrlp.vim'
 " Plugin 'Shougo/unite.vim'
 " Alignment
 Plugin 'godlygeek/tabular'
+" Indent Line
+Plugin 'Yggdroot/indentLine'
+" Grep Tool
+Plugin 'rking/ag.vim'
+" Repeat vimscript commands
+Plugin 'tpope/vim-repeat'
+
 
 
 " plugin from http://vim-scripts.org/vim/scripts.html
