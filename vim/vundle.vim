@@ -65,7 +65,7 @@ Plugin 'rking/ag.vim'
 " Repeat vimscript commands
 Plugin 'tpope/vim-repeat'
 " Syntax check
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
 
 
 
