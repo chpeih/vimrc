@@ -2,8 +2,6 @@
 "echo "tagbar.vim"
 
 
-
-
 "快捷键开关Tagbar
 nmap <F9> :TagbarToggle<cr> 
 "不同时显示多个文件的tag，只显示当前文件的

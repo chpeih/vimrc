@@ -35,6 +35,11 @@ Plugin 'artur-shaik/vim-javacomplete2'
 " Snippet
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
+" This Snippet seems incompatible with neocomplete
+" Plugin 'SirVer/ultisnips'
+" Snippets are separated from the engine. Add this if you want them:
+" Plugin 'honza/vim-snippets'
+
 " Fast Comment
 Plugin 'scrooloose/nerdcommenter'
 " Parenthese
