@@ -18,4 +18,4 @@ source $HOME/.vim/vim/jedi.vim
 source $HOME/.vim/vim/airline.vim
 source $HOME/.vim/vim/indentline.vim
 source $HOME/.vim/vim/clang_complete.vim
-source $HOME/.vim/vim/syntastic.vim
+"source $HOME/.vim/vim/syntastic.vim
