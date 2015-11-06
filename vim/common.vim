@@ -64,6 +64,9 @@ set completeopt=menu
 
 "行号
 set number
+set numberwidth=5
+set lines=35
+set columns=115
 "gvim下字体
 if has("win32")
     set guifont=Monaco:h11
@@ -104,8 +107,6 @@ set foldmethod=indent
 set foldnestmax=10
 set foldlevel=10
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc':'zo')<CR> 
-set lines=35
-set columns=115
 "语法高亮
 syntax on 
 syntax enable
