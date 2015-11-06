@@ -3,6 +3,7 @@
 
 function! RefreshTags() abort
     !python $HOME/.vim/vim/ctagsgenerator.py '%' '%:p:h' '%:p:h'
+    :echom 'Tags:'.expand('%:p:h')
 endfunction
 
 " 从当前目录向下递归生成tags
