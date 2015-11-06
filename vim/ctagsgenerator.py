@@ -16,9 +16,9 @@ if __name__=='__main__':
         '''argv[1] is current file name'''
         '''argv[2] is current directory'''
         '''argv[3] is target tags directory'''
-        print(sys.argv[1])
-        print(sys.argv[2])
-        print(sys.argv[3])
+        #print(sys.argv[1])
+        #print(sys.argv[2])
+        #print(sys.argv[3])
         FileName = sys.argv[1]
         if (FileName.find('.')):
             FileType = FileName[ FileName.find('.')+1 : len(FileName) ]
