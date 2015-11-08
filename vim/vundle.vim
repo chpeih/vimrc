@@ -20,8 +20,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Shougo/neocomplete'
 " Tagbar for class/function/macro
 Plugin 'majutsushi/tagbar'
-" Doxygen
-Plugin 'doxygen/doxygen'
+" DoxygenToolkit
+Plugin 'vim-scripts/DoxygenToolkit.vim'
 " Nerdtree
 Plugin 'scrooloose/nerdtree'
 " Web-mode Completion

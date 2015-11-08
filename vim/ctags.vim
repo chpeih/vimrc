@@ -3,11 +3,10 @@
 
 function! RefreshTags() abort
     !python $HOME/.vim/vim/ctagsgenerator.py '%' '%:p:h' '%:p:h'
-    :echom 'Tags:'.expand('%:p:h')
 endfunction
 
 " 从当前目录向下递归生成tags
-map <F5> :call RefreshTags()<CR>
+map <F5> :call RefreshTags()<CR><CR>
 
 "在有ctags文件的支持下的Taglist配置
 "设置tags在当前目录下寻找以及父目录
