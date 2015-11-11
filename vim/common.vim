@@ -111,3 +111,4 @@ nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc':'zo')<CR>
 syntax on 
 syntax enable
 
+set cursorline

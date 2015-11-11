@@ -7,15 +7,16 @@ source $HOME/.vim/vim/common.vim
 source $HOME/.vim/vim/colortheme.vim
 source $HOME/.vim/vim/ctags.vim
 source $HOME/.vim/vim/doxygen.vim
-source $HOME/.vim/vim/emmet.vim
 source $HOME/.vim/vim/neocomplete.vim
 source $HOME/.vim/vim/neosnippet.vim
-"source $HOME/.vim/vim/ultisnips.vim
-source $HOME/.vim/vim/javacomplete2.vim
 source $HOME/.vim/vim/tagbar.vim
 source $HOME/.vim/vim/nerdtree.vim
-source $HOME/.vim/vim/jedi.vim
 source $HOME/.vim/vim/airline.vim
 source $HOME/.vim/vim/indentline.vim
+
+source $HOME/.vim/vim/syntastic.vim
+source $HOME/.vim/vim/emmet.vim
+source $HOME/.vim/vim/javacomplete2.vim
+source $HOME/.vim/vim/jedi.vim
 source $HOME/.vim/vim/clang_complete.vim
-"source $HOME/.vim/vim/syntastic.vim
+source $HOME/.vim/vim/python-mode.vim

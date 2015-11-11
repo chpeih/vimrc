@@ -18,20 +18,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Auto Completion
 Plugin 'Shougo/neocomplete'
-" Tagbar for class/function/macro
-Plugin 'majutsushi/tagbar'
-" DoxygenToolkit
-Plugin 'vim-scripts/DoxygenToolkit.vim'
-" Nerdtree
-Plugin 'scrooloose/nerdtree'
-" Web-mode Completion
-Plugin 'mattn/emmet-vim'
-" Color theme Solarized
-Plugin 'altercation/vim-colors-solarized'
-" PHP Completion
-Plugin 'shawncplus/phpcomplete.vim'
-" Java Completion
-Plugin 'artur-shaik/vim-javacomplete2'
 " Snippet
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
@@ -39,16 +25,21 @@ Plugin 'Shougo/neosnippet-snippets'
 " Plugin 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
 " Plugin 'honza/vim-snippets'
+
+" Tagbar for class/function/macro
+Plugin 'majutsushi/tagbar'
+" DoxygenToolkit
+Plugin 'vim-scripts/DoxygenToolkit.vim'
+" Nerdtree
+Plugin 'scrooloose/nerdtree'
+" Color theme Solarized
+Plugin 'altercation/vim-colors-solarized'
 " Fast Comment
 Plugin 'scrooloose/nerdcommenter'
 " Parenthese
 Plugin 'tpope/vim-surround'
 " EasyMotion
 Plugin 'easymotion/vim-easymotion'
-" Python Completion
-Plugin 'davidhalter/jedi-vim'
-" C/C++ Completion
-Plugin 'Rip-Rip/clang_complete'
 " Beautiful front end
 Plugin 'bling/vim-airline'
 " Git
@@ -64,8 +55,21 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'rking/ag.vim'
 " Repeat vimscript commands
 Plugin 'tpope/vim-repeat'
+
+" Language support
 " Syntax check
-" Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
+" C/C++ Completion
+Plugin 'Rip-Rip/clang_complete'
+" Web-mode
+Plugin 'mattn/emmet-vim'
+" PHP Completion
+Plugin 'shawncplus/phpcomplete.vim'
+" Java Completion
+Plugin 'artur-shaik/vim-javacomplete2'
+" Python Completion
+Plugin 'davidhalter/jedi-vim'
+Plugin 'klen/python-mode'
 
 
 
