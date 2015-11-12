@@ -1,13 +1,15 @@
 "debug
 "echo "ctags.vim"
 
-function! RefreshTags() abort
-    !python $HOME/.vim/vim/ctagsgenerator.py '%' '%:p:h' '%:p:h'
-    set tags+=./tags
-endfunction
+"function! RefreshTags() abort
+    "!python $HOME/.vim/vim/ctagsgenerator.py '%' '%:p:h' '%:p:h'
+    "set tags+=./tags
+    "!cscope -Rbq
+    ":cs add cscope.out
+"endfunction
 
 " 从当前目录向下递归生成tags
-map <F5> :call RefreshTags()<CR><CR>
+"map <F5> :call RefreshTags()<CR><CR>
 
 "在有ctags文件的支持下的Taglist配置
 "设置tags在当前目录下寻找以及父目录
@@ -20,6 +22,21 @@ set tags+=../../../../../tags
 set tags+=../../../../../..tags
 
 
+if filereadable("cscope.out")
+    cs add ./cscope.out
+elseif filereadable("../cscope.out")
+    cs add ../cscope.out
+elseif filereadable("../../cscope.out")
+    cs add ../../cscope.out
+elseif filereadable("../../../cscope.out")
+    cs add ../../../cscope.out
+elseif filereadable("../../../../cscope.out")
+    cs add ../../../../cscope.out
+elseif filereadable("../../../../../cscope.out")
+    cs add ../../../../../cscope.out
+elseif filereadable("../../../../../../cscope.out")
+    cs add ../../../../../../cscope.out
+endif
 
 "cscope key mapping
 nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>
