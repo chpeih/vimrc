@@ -69,7 +69,12 @@ Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'artur-shaik/vim-javacomplete2'
 " Python Completion
 Plugin 'davidhalter/jedi-vim'
-Plugin 'klen/python-mode'
+" Plugin 'klen/python-mode'
+
+" Python highlight
+Plugin 'hdima/python-syntax'
+" Javascript highlight
+Plugin 'pangloss/vim-javascript'
 
 
 

@@ -17,6 +17,6 @@ let g:syntastic_cpp_compiler_options = "-Wall -std=c++11"
 " Use python-mode for py code, disable syntastic in py
 let g:syntastic_mode_map = {
     \ "mode": "active",
-    \ "active_filetypes": ["ruby", "php"],
-    \ "passive_filetypes": ["py", "pyc"] 
+    \ "active_filetypes": [],
+    \ "passive_filetypes": [] 
     \ }

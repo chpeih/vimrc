@@ -28,19 +28,19 @@ if __name__=='__main__':
         TagsDir = os.path.abspath(sys.argv[3])
         os.chdir(TagsDir)
         if (FileType == 'cpp' or FileType == 'c' or FileType == 'cxx' or FileType == 'cc' or FileType == 'h' or FileType == 'hpp' or FileType == 'hh' or FileType == 'c++'):
-            os.system("ctags -R " + FileDir + " --languages=c++ --c++-kinds=+px --fields=+iaKSz --extra=+qf")
+            os.system("ctags -R " + FileDir + " --language-force=c++ --c++-kinds=+px --fields=+iaKSz --extra=+qf")
         elif (FileType == "py"):
-            os.system("ctags -R " + FileDir + " --languages=python --fields=+iaS --extra=+q")
+            os.system("ctags -R " + FileDir + " --language-force=python --fields=+iaS --extra=+q")
         elif (FileType == "php"):
-            os.system("ctags -R " + FileDir + " --languages=php --fields=+iaS --extra=+q")
+            os.system("ctags -R " + FileDir + " --language-force=php --fields=+iaS --extra=+q")
         elif (FileType == "java"):
-            os.system("ctags -R " + FileDir + " --languages=java --java-kinds=+p --fields=+iaS --extra=+q")
+            os.system("ctags -R " + FileDir + " --language-force=java --java-kinds=+p --fields=+iaS --extra=+q")
         elif (FileType == "perl"):
-            os.system("ctags -R " + FileDir + " --languages=perl --perl-kinds=+px --fields=+iaS --extra=+q")
-        elif (FileType == "js" or FileType == "javascript"):
-            os.system("ctags -R " + FileDir + " --languages=perl --perl-kinds=+px --fields=+iaS --extra=+q")
+            os.system("ctags -R " + FileDir + " --language-force=perl --perl-kinds=+px --fields=+iaS --extra=+q")
+        elif (FileType == "js" or FileType == "javascript" or FileType == "html" or FileType == "htm"):
+            os.system("ctags -R " + FileDir + " --language-force=javascript --javascript-kinds=+px --fields=+iaS --extra=+q")
         elif (FileType == "sql"):
-            os.system("ctags -R " + FileDir + " --languages=sql --sql-kinds=+px --fields=+iaS --extra=+q")
+            os.system("ctags -R " + FileDir + " --language-force=sql --sql-kinds=+px --fields=+iaS --extra=+q")
         else:
             os.system("ctags -R " + FileDir)
     except Exception, e:

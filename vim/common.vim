@@ -11,6 +11,7 @@ set showcmd
 set hlsearch
 "退格键能够换行
 set backspace=indent,eol,start whichwrap+=<,>,[,]
+set wrap
 "共享剪贴板
 set clipboard+=unnamed 
 "当文件被改动时自动载入
@@ -111,4 +112,4 @@ nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc':'zo')<CR>
 syntax on 
 syntax enable
 
-set cursorline
+" set cursorline
