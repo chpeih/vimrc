@@ -13,10 +13,14 @@ source $HOME/.vim/vim/nerdtree.vim
 source $HOME/.vim/vim/airline.vim
 source $HOME/.vim/vim/indentline.vim
 
+" syntastic check
 source $HOME/.vim/vim/syntastic.vim
+" language completion
 source $HOME/.vim/vim/emmet.vim
 source $HOME/.vim/vim/javacomplete2.vim
 source $HOME/.vim/vim/jedi.vim
 source $HOME/.vim/vim/clang_complete.vim
+" syntax highlight
+source $HOME/.vim/vim/syntax_python.vim
 
 source $HOME/.vim/vim/common.vim
