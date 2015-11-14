@@ -21,7 +21,7 @@ set tags+=../../../../tags
 set tags+=../../../../../tags
 set tags+=../../../../../..tags
 
-
+set nocscopeverbose
 if filereadable("cscope.out")
     cs add ./cscope.out
 elseif filereadable("../cscope.out")
