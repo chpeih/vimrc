@@ -66,11 +66,11 @@ set completeopt=menu
 "行号
 set number
 set numberwidth=5
-set lines=35
+set lines=30
 set columns=115
 "gvim下字体
 if has("win32")
-    set guifont=Monaco:h11
+    set guifont=Monaco:h10
 else 
     set guifont=Monaco\ 11
 endif

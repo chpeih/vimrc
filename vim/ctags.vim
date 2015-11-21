@@ -13,29 +13,33 @@
 
 "在有ctags文件的支持下的Taglist配置
 "设置tags在当前目录下寻找以及父目录
-set tags+=./tags
-set tags+=../tags
-set tags+=../../tags
-set tags+=../../../tags
-set tags+=../../../../tags
-set tags+=../../../../../tags
-set tags+=../../../../../..tags
+if executable('ctags')
+    set tags+=./tags
+    set tags+=../tags
+    set tags+=../../tags
+    set tags+=../../../tags
+    set tags+=../../../../tags
+    set tags+=../../../../../tags
+    set tags+=../../../../../..tags
+endif
 
-set nocscopeverbose
-if filereadable("cscope.out")
-    cs add ./cscope.out
-elseif filereadable("../cscope.out")
-    cs add ../cscope.out
-elseif filereadable("../../cscope.out")
-    cs add ../../cscope.out
-elseif filereadable("../../../cscope.out")
-    cs add ../../../cscope.out
-elseif filereadable("../../../../cscope.out")
-    cs add ../../../../cscope.out
-elseif filereadable("../../../../../cscope.out")
-    cs add ../../../../../cscope.out
-elseif filereadable("../../../../../../cscope.out")
-    cs add ../../../../../../cscope.out
+if executable('cscope')
+    set nocscopeverbose
+    if filereadable("cscope.out")
+        cs add ./cscope.out
+    elseif filereadable("../cscope.out")
+        cs add ../cscope.out
+    elseif filereadable("../../cscope.out")
+        cs add ../../cscope.out
+    elseif filereadable("../../../cscope.out")
+        cs add ../../../cscope.out
+    elseif filereadable("../../../../cscope.out")
+        cs add ../../../../cscope.out
+    elseif filereadable("../../../../../cscope.out")
+        cs add ../../../../../cscope.out
+    elseif filereadable("../../../../../../cscope.out")
+        cs add ../../../../../../cscope.out
+    endif
 endif
 
 "cscope key mapping
