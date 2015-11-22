@@ -14,7 +14,11 @@ source $HOME/.vim/vim/airline.vim
 source $HOME/.vim/vim/indentline.vim
 
 " syntastic check
-source $HOME/.vim/vim/syntastic.vim
+if has("win32")
+"    source $HOME/.vim/vim/syntastic.vim
+else
+    source $HOME/.vim/vim/syntastic.vim
+endif
 " language completion
 source $HOME/.vim/vim/emmet.vim
 source $HOME/.vim/vim/javacomplete2.vim

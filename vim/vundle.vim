@@ -58,7 +58,11 @@ Plugin 'tpope/vim-repeat'
 
 " Language support
 " Syntax check
-Plugin 'scrooloose/syntastic'
+if has("win32")
+"   Plugin 'scrooloose/syntastic'
+else
+    Plugin 'scrooloose/syntastic'
+endif
 " C/C++ Completion
 Plugin 'Rip-Rip/clang_complete'
 " Web-mode
