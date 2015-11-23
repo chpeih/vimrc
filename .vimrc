@@ -14,17 +14,20 @@ source $HOME/.vim/vim/airline.vim
 source $HOME/.vim/vim/indentline.vim
 
 " syntastic check
-if has("win32")
-"    source $HOME/.vim/vim/syntastic.vim
-else
-    source $HOME/.vim/vim/syntastic.vim
-endif
-" language completion
-source $HOME/.vim/vim/emmet.vim
-source $HOME/.vim/vim/javacomplete2.vim
-source $HOME/.vim/vim/jedi.vim
-source $HOME/.vim/vim/clang_complete.vim
-" syntax highlight
-source $HOME/.vim/vim/syntax_python.vim
+" source $HOME/.vim/vim/syntastic.vim
 
+" language support
+" Web-mode
+source $HOME/.vim/vim/emmet.vim
+" java
+source $HOME/.vim/vim/javacomplete2.vim
+" Python
+source $HOME/.vim/vim/jedi.vim
+source $HOME/.vim/vim/syntax_python.vim
+" C/C++
+source $HOME/.vim/vim/clang_complete.vim
+" Lua
+source $HOME/.vim/vim/lua.vim
+
+" common user configure
 source $HOME/.vim/vim/common.vim

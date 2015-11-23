@@ -58,25 +58,23 @@ Plugin 'tpope/vim-repeat'
 
 " Language support
 " Syntax check
-if has("win32")
-"   Plugin 'scrooloose/syntastic'
-else
-    Plugin 'scrooloose/syntastic'
-endif
-" C/C++ Completion
+"Plugin 'scrooloose/syntastic'
+" C/C++
 Plugin 'Rip-Rip/clang_complete'
 " Web-mode
 Plugin 'mattn/emmet-vim'
-" PHP Completion
+" PHP
 Plugin 'shawncplus/phpcomplete.vim'
-" Java Completion
+" Java 
 Plugin 'artur-shaik/vim-javacomplete2'
-" Python Completion
+" Python 
 Plugin 'davidhalter/jedi-vim'
-" Plugin 'klen/python-mode'
-
-" Python highlight
 Plugin 'hdima/python-syntax'
+" Plugin 'klen/python-mode'
+" Lua 
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-lua-ftplugin'
+"Plugin 'xolox/vim-lua-inspect'
 " Javascript highlight
 Plugin 'pangloss/vim-javascript'
 
