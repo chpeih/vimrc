@@ -66,7 +66,7 @@ Plugin 'mattn/emmet-vim'
 " PHP
 Plugin 'shawncplus/phpcomplete.vim'
 " Java 
-Plugin 'artur-shaik/vim-javacomplete2'
+"Plugin 'artur-shaik/vim-javacomplete2'
 " Python 
 Plugin 'davidhalter/jedi-vim'
 Plugin 'hdima/python-syntax'
