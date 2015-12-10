@@ -27,7 +27,7 @@ source $HOME/.vim/vim/syntax_python.vim
 " C/C++
 source $HOME/.vim/vim/clang_complete.vim
 " Lua
-source $HOME/.vim/vim/lua.vim
+" source $HOME/.vim/vim/lua.vim
 
 " common user configure
 source $HOME/.vim/vim/common.vim

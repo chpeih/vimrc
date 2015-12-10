@@ -21,10 +21,6 @@ Plugin 'Shougo/neocomplete'
 " Snippet
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
-" This Snippet seems incompatible with neocomplete
-" Plugin 'SirVer/ultisnips'
-" Snippets are separated from the engine. Add this if you want them:
-" Plugin 'honza/vim-snippets'
 
 " Tagbar for class/function/macro
 Plugin 'majutsushi/tagbar'
@@ -43,7 +39,7 @@ Plugin 'easymotion/vim-easymotion'
 " Beautiful front end
 Plugin 'bling/vim-airline'
 " Git
-Plugin 'tpope/vim-fugitive'
+" Plugin 'tpope/vim-fugitive'
 " Buffer
 Plugin 'kien/ctrlp.vim'
 " Plugin 'Shougo/unite.vim'
@@ -55,26 +51,20 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'rking/ag.vim'
 " Repeat vimscript commands
 Plugin 'tpope/vim-repeat'
+" mark
+Plugin 'vim-scripts/Mark--Karkat'
 
 " Language support
-" Syntax check
-"Plugin 'scrooloose/syntastic'
 " C/C++
 Plugin 'Rip-Rip/clang_complete'
 " Web-mode
 Plugin 'mattn/emmet-vim'
 " PHP
 Plugin 'shawncplus/phpcomplete.vim'
-" Java 
-"Plugin 'artur-shaik/vim-javacomplete2'
 " Python 
 Plugin 'davidhalter/jedi-vim'
 Plugin 'hdima/python-syntax'
 " Plugin 'klen/python-mode'
-" Lua 
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-lua-ftplugin'
-"Plugin 'xolox/vim-lua-inspect'
 " Javascript highlight
 Plugin 'pangloss/vim-javascript'
 
