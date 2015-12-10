@@ -20,7 +20,7 @@ source $HOME/.vim/vim/indentline.vim
 " Web-mode
 source $HOME/.vim/vim/emmet.vim
 " java
-" source $HOME/.vim/vim/javacomplete2.vim
+source $HOME/.vim/vim/javacomplete2.vim
 " Python
 source $HOME/.vim/vim/jedi.vim
 source $HOME/.vim/vim/syntax_python.vim

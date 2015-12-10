@@ -59,6 +59,8 @@ Plugin 'vim-scripts/Mark--Karkat'
 Plugin 'Rip-Rip/clang_complete'
 " Web-mode
 Plugin 'mattn/emmet-vim'
+" java complete
+Plugin 'artur-shaik/vim-javacomplete2'
 " PHP
 Plugin 'shawncplus/phpcomplete.vim'
 " Python 
