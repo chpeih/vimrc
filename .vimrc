@@ -3,7 +3,7 @@ set runtimepath+=$HOME/.vim
 
 " vundle must be the first
 source $HOME/.vim/vim/vundle.vim
-"source $HOME/.vim/vim/neocomplete.vim
+source $HOME/.vim/vim/neocomplete.vim
 source $HOME/.vim/vim/neosnippet.vim
 source $HOME/.vim/vim/colortheme.vim
 source $HOME/.vim/vim/ctags.vim
