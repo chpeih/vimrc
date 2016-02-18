@@ -102,6 +102,7 @@ set columns=115
 if has("win32")
     set guifont=Monaco:h9
 else 
+    set guifont=FreeMono\ 11
     set guifont=Monaco\ 10
 endif
 "gvim下隐藏工具栏
