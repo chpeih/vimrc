@@ -13,9 +13,6 @@ source $HOME/.vim/vim/nerdtree.vim
 source $HOME/.vim/vim/airline.vim
 source $HOME/.vim/vim/indentline.vim
 
-" syntastic check
-" source $HOME/.vim/vim/syntastic.vim
-
 " language support
 " Web-mode
 source $HOME/.vim/vim/emmet.vim
