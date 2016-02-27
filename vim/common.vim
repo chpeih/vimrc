@@ -100,6 +100,7 @@ set lines=27
 set columns=115
 "gvim下字体
 if has("win32")
+    set guifont=FreeMono:h12
     set guifont=Monaco:h10
 else 
     set guifont=FreeMono\ 11

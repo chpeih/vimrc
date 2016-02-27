@@ -42,7 +42,6 @@ Plugin 'bling/vim-airline'
 " Plugin 'tpope/vim-fugitive'
 " Buffer
 Plugin 'kien/ctrlp.vim'
-" Plugin 'Shougo/unite.vim'
 " Alignment
 Plugin 'godlygeek/tabular'
 " Indent Line
@@ -66,9 +65,10 @@ Plugin 'shawncplus/phpcomplete.vim'
 " Python 
 Plugin 'davidhalter/jedi-vim'
 Plugin 'hdima/python-syntax'
-" Plugin 'klen/python-mode'
 " Javascript highlight
 Plugin 'pangloss/vim-javascript'
+" for LaTex
+Plugin 'lervag/vimtex'
 
 
 
