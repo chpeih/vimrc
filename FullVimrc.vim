@@ -72,8 +72,6 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'hdima/python-syntax'
 " Javascript highlight
 Plugin 'pangloss/vim-javascript'
-" for LaTex
-Plugin 'lervag/vimtex'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -82,7 +80,7 @@ filetype plugin indent on    " required
 
 
 
-" (Final)
+" (Common)
 set nocompatible
 set fileformats=unix,dos,mac
 if has("gui_running")
@@ -229,7 +227,7 @@ syntax on
 syntax enable
 
 colorscheme solarized
-" colorscheme desert
+colorscheme desert
 let g:solarized_termcolors=256
 set background=dark
 
