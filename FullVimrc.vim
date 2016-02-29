@@ -86,6 +86,9 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 " Markdown
 Plugin 'plasticboy/vim-markdown'
+" Ruby
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
 
 
 " All of your Plugins must be added before the following line
