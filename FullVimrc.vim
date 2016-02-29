@@ -61,22 +61,37 @@ Plugin 'vim-scripts/Mark--Karkat'
 " Language support
 " C/C++
 Plugin 'Rip-Rip/clang_complete'
-" Web-mode
+" Web-mode HTML/CSS/Javascript
 Plugin 'mattn/emmet-vim'
+Plugin 'ap/vim-css-color'
+Plugin 'groenewege/vim-less'
+Plugin 'hail2u/vim-css3-syntax'
 " java complete
 Plugin 'artur-shaik/vim-javacomplete2'
 " PHP
 Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'StanAngeloff/php.vim'
 " Python 
 Plugin 'davidhalter/jedi-vim'
 Plugin 'hdima/python-syntax'
 " Javascript highlight
 Plugin 'pangloss/vim-javascript'
+" Coffee Script
+Plugin 'kchmck/vim-coffee-script'
+" Rust
+Plugin 'rust-lang/rust.vim'
+" Scala
+Plugin 'derekwyatt/vim-scala'
+" LaTeX
+Plugin 'LaTeX-Box-Team/LaTeX-Box'
+" Markdown
+Plugin 'plasticboy/vim-markdown'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-" vundle end
+" Vundle end
 
 
 
