@@ -230,10 +230,10 @@ set autoindent
 set tabstop=4
 "统一缩进为4
 set softtabstop=4
-set shiftwidth=4 
+set shiftwidth=4
 "用空格代替制表符
-set expandtab 
-set smarttab 
+set expandtab
+set smarttab
 "空格折叠
 set foldenable 
 set foldmethod=indent 
@@ -245,10 +245,13 @@ syntax on
 syntax enable
 
 colorscheme solarized
-colorscheme desert
+" colorscheme desert
 let g:solarized_termcolors=256
 set background=dark
 
+" whitespace/tab/endline
+set list
+set list listchars=tab:>-,trail:.,extends:>
 
 
 
@@ -551,7 +554,4 @@ let g:clang_snippets = 0
 let g:clang_user_options = '-std=c++11'
 "let g:clang_hl_errors = 1
 "let g:clang_snippets = 1
-
-
-
 

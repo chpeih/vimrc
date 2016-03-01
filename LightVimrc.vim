@@ -145,4 +145,11 @@ nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc':'zo')<CR>
 syntax on 
 syntax enable
 
-" set cursorline
+" Color Theme
+colorscheme desert
+let g:solarized_termcolors=256
+set background=dark
+
+" whitespace/tab/endline
+set list
+set list listchars=tab:>-,trail:.,extends:>
