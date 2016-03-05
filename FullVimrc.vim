@@ -67,7 +67,8 @@ Plugin 'ap/vim-css-color'
 Plugin 'groenewege/vim-less'
 Plugin 'hail2u/vim-css3-syntax'
 " java complete
-Plugin 'artur-shaik/vim-javacomplete2'
+" java complete is not good to use
+" Plugin 'artur-shaik/vim-javacomplete2'
 " PHP
 Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'StanAngeloff/php.vim'
@@ -196,7 +197,7 @@ set completeopt=menu
 "行号
 set number
 set numberwidth=5
-set lines=27
+set lines=30
 set columns=115
 "gvim下字体
 if has("win32")
@@ -206,6 +207,7 @@ else
     set guifont=FreeMono\ 11
     set guifont=Monaco\ 11
 endif
+set guicursor=a:block-blinkon0
 "gvim下隐藏工具栏
 set guioptions-=T
 "gvim隐藏菜单栏
@@ -244,7 +246,7 @@ nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc':'zo')<CR>
 syntax on 
 syntax enable
 
-colorscheme solarized
+" colorscheme solarized
 " colorscheme desert
 let g:solarized_termcolors=256
 set background=dark
