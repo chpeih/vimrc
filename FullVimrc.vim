@@ -246,8 +246,10 @@ nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc':'zo')<CR>
 syntax on 
 syntax enable
 
-" colorscheme solarized
-" colorscheme desert
+if has("gui_running")
+    colorscheme solarized
+    " colorscheme desert
+endif
 let g:solarized_termcolors=256
 set background=dark
 

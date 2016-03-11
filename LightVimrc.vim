@@ -146,7 +146,9 @@ syntax on
 syntax enable
 
 " Color Theme
-colorscheme desert
+if has("gui_running")
+    colorscheme desert
+endif
 let g:solarized_termcolors=256
 set background=dark
 
