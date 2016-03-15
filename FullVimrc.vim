@@ -20,12 +20,6 @@ Plugin 'VundleVim/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 
-" Auto Completion
-Plugin 'Shougo/neocomplete'
-" Snippet
-Plugin 'Shougo/neosnippet'
-Plugin 'Shougo/neosnippet-snippets'
-
 " Tagbar for class/function/macro
 Plugin 'majutsushi/tagbar'
 " DoxygenToolkit
@@ -59,8 +53,12 @@ Plugin 'tpope/vim-repeat'
 Plugin 'vim-scripts/Mark--Karkat'
 
 " Language support
+" snippet
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
 " C/C++
-Plugin 'Rip-Rip/clang_complete'
+Plugin 'Valloric/YouCompleteMe'
 " Web-mode HTML/CSS/Javascript
 Plugin 'mattn/emmet-vim'
 Plugin 'ap/vim-css-color'
@@ -73,7 +71,7 @@ Plugin 'hail2u/vim-css3-syntax'
 Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'StanAngeloff/php.vim'
 " Python 
-Plugin 'davidhalter/jedi-vim'
+" Plugin 'davidhalter/jedi-vim'
 Plugin 'hdima/python-syntax'
 " Javascript highlight
 Plugin 'pangloss/vim-javascript'
@@ -182,7 +180,7 @@ source $VIMRUNTIME/menu.vim
 language messages en_US.utf-8
 
 "Ctrl+hjkl在不同窗口下移动光标
-"与neosnippet快捷键冲突
+"与snippet快捷键冲突
 " nmap <C-H> <C-w>h
 " nmap <C-J> <C-w>j
 " nmap <C-K> <C-w>k
@@ -191,6 +189,7 @@ map Q <Nop>
 
 "不要设置completeopt=preview
 "代码补全时不要出现额外的窗口
+set completeopt-=preview
 set completeopt=menu
 
 
@@ -261,117 +260,23 @@ set list listchars=tab:>-,trail:.,extends:>
 
 " Plugin Configure
 
-" (2) Neocomplete
-"Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
-" Disable AutoComplPop.
-let g:acp_enableAtStartup = 0
-" Use neocomplete.
-let g:neocomplete#enable_at_startup = 1
-" Use smartcase.
-let g:neocomplete#enable_smart_case = 1
-" Set minimum syntax keyword length.
-let g:neocomplete#sources#syntax#min_keyword_length = 1
-let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
-
-" Define dictionary.
-let g:neocomplete#sources#dictionary#dictionaries = {
-    \ 'default' : '',
-    \ 'vimshell' : $HOME.'/.vimshell_hist',
-    \ 'scheme' : $HOME.'/.gosh_completions'
-        \ }
-
-" Define keyword.
-if !exists('g:neocomplete#keyword_patterns')
-    let g:neocomplete#keyword_patterns = {}
-endif
-let g:neocomplete#keyword_patterns['default'] = '\h\w*'
-
-" Plugin key-mappings.
-inoremap <expr><C-g>     neocomplete#undo_completion()
-inoremap <expr><C-l>     neocomplete#complete_common_string()
-
-" Recommended key-mappings.
-" <CR>: close popup and save indent.
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-function! s:my_cr_function()
-  return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
-  " For no inserting <CR> key.
-  "return pumvisible() ? "\<C-y>" : "\<CR>"
-endfunction
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-" <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
-" Close popup by <Space>.
-"inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
-
-" AutoComplPop like behavior.
-"let g:neocomplete#enable_auto_select = 1
-
-" Shell like behavior(not recommended).
-"set completeopt+=longest
-"let g:neocomplete#enable_auto_select = 1
-"let g:neocomplete#disable_auto_complete = 1
-"inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<C-x>\<C-u>"
-
-" Enable omni completion.
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-" autocmd FileType php setlocal omnifunc=phpcomplete#Complete
-
-" Enable heavy omni completion.
-if !exists('g:neocomplete#sources#omni#input_patterns')
-  let g:neocomplete#sources#omni#input_patterns = {}
-endif
-let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
-let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
-let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
-
-" For perlomni.vim setting.
-" https://github.com/c9s/perlomni.vim
-let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
-
-" clang_complete conflict with neocomplete
-" This is a fixing configure 
-" let neocomplete working with clang_complete
-if !exists('g:neocomplcache_force_omni_patterns')
-    let g:neocomplcache_force_omni_patterns = {}
-endif
-let g:neocomplcache_force_overwrite_completefunc = 1
-let g:neocomplcache_force_omni_patterns.c =
-            \ '[^.[:digit:] *\t]\%(\.\|->\)'
-let g:neocomplcache_force_omni_patterns.cpp =
-            \ '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
-let g:neocomplcache_force_omni_patterns.objc =
-            \ '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
-let g:neocomplcache_force_omni_patterns.objcpp =
-            \ '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+" (2) YouCompleteMe
+let g:ycm_path_to_python_interpreter='/usr/bin/python'
+let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
+" disable boring syntax check
+let g:ycm_show_diagnostics_ui=0
+let g:ycm_register_as_syntastic_checker=0
 
 
-" (3) Neosnippet
-" Plugin key-mappings.
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
 
-" SuperTab like snippets behavior.
-"imap <expr><TAB>
-" \ pumvisible() ? "\<C-n>" :
-" \ neosnippet#expandable_or_jumpable() ?
-" \    "\<TAB>" : "\<Plug>(neosnippet_expand_or_jump)"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+" (3) ultisnips
+let g:UltiSnipsExpandTrigger="<c-k>"
+let g:UltiSnipsJumpForwardTrigger="<c-n>"
+let g:UltiSnipsJumpBackwardTrigger="<c-p>"
 
-" For conceal markers.
-if has('conceal')
-  set conceallevel=2 concealcursor=niv
-endif
-" Enable snipMate compatibility feature.
-" let g:neosnippet#enable_snipmate_compatibility = 1
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 
 
 " (4) Ctags Cscope
@@ -536,26 +441,6 @@ autocmd FileType java set omnifunc=javacomplete#Complete
 
 
 " (12) Python
-" Jedi
-autocmd FileType python setlocal completeopt-=preview
-let g:jedi#popup_select_first = 0
-let g:jedi#completions_command = "<C-N>"
-let g:jedi#goto_definitions = "<C-]>"
-let g:jedi#goto_assignments = "<C-T>"
 " syntax_python
 let python_highlight_all = 1
-
-
-" (13) Clang Completion
-" clang_complete configure
-let g:clang_complete_auto = 1
-let g:clang_auto_select = 0
-let g:clang_use_library = 1
-if has("win32")
-    let g:clang_library_path="C:/bin/LLVM/bin"
-endif
-let g:clang_snippets = 0
-let g:clang_user_options = '-std=c++11'
-"let g:clang_hl_errors = 1
-"let g:clang_snippets = 1
 
