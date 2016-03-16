@@ -24,8 +24,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'majutsushi/tagbar'
 " DoxygenToolkit
 Plugin 'vim-scripts/DoxygenToolkit.vim'
-" Nerdtree
-Plugin 'scrooloose/nerdtree'
 " Color theme Solarized
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
@@ -135,7 +133,7 @@ if has("win32")
     endfunction
 endif
 
-"显示命令
+"show command 显示命令
 set showcmd
 set hlsearch
 "退格键能够换行
@@ -148,15 +146,15 @@ set autoread
 set autowrite
 set ruler
 set magic
-"可以使用鼠标
-set mouse=a 
-set selection=exclusive 
-set selectmode=mouse,key 
+"use mouse 可以使用鼠标
+set mouse=a
+set selection=exclusive
+set selectmode=mouse,key
 "括号匹配
 set showmatch
-"忽略大小写匹配
-set ignorecase 
-set laststatus=2 
+"ignore case search 忽略大小写匹配
+set ignorecase
+set laststatus=2
 "侦测文件类型
 filetype on
 "允许插件
@@ -187,61 +185,58 @@ language messages en_US.utf-8
 " nmap <C-L> <C-w>l
 map Q <Nop>
 
-"不要设置completeopt=preview
-"代码补全时不要出现额外的窗口
+"do NOT set completeopt=preview
+"disable additional window
 set completeopt-=preview
 set completeopt=menu
 
 
-"行号
+"size
 set number
 set numberwidth=5
 set lines=30
 set columns=115
-"gvim下字体
+"gvim font
 if has("win32")
-    set guifont=FreeMono:h12
+    set guifont=Courier\ 10\ Pitch:h12
     set guifont=Monaco:h10
-else 
-    set guifont=FreeMono\ 11
+else
+    set guifont=Courier\ 10\ Pitch\ 12
     set guifont=Monaco\ 11
 endif
+" cursor NO blink
 set guicursor=a:block-blinkon0
-"gvim下隐藏工具栏
+"gvim hide tool bar 隐藏工具栏
 set guioptions-=T
-"gvim隐藏菜单栏
+"gvim hide menu bar 隐藏菜单栏
 " set guioptions-=m
-"光标移动到buffer的顶部和底部时保持1行距离
+"cursor keep 1 line to the top/bottom
 set scrolloff=1
-"不响警铃
+"no bell
 set noerrorbells
 set novisualbell
-"关闭visual bell
+"shut visual bell
 set visualbell t_vb=  
-"关闭beep
+"shut beep bell
 au GuiEnter * set t_vb= 
 
-"c风格缩进
-set cindent 
-"智能缩进
-set smartindent 
-"自动缩进
-set autoindent 
-"制表符为4
+"indent
+set cindent
+set smartindent
+set autoindent
+"use whitespace 4 instead of tab
 set tabstop=4
-"统一缩进为4
 set softtabstop=4
 set shiftwidth=4
-"用空格代替制表符
 set expandtab
 set smarttab
-"空格折叠
+"fold 空格折叠
 set foldenable 
 set foldmethod=indent 
 set foldnestmax=10
 set foldlevel=10
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc':'zo')<CR> 
-"语法高亮
+" syntax highlight
 syntax on 
 syntax enable
 
@@ -255,6 +250,7 @@ set background=dark
 " whitespace/tab/endline
 set list
 set list listchars=tab:>-,trail:.,extends:>
+
 
 
 
@@ -406,25 +402,11 @@ autocmd VimEnter * nested :TagbarSetFoldlevel! 99
 " <F1>          显示帮助 
 
 
-" (7) NerdTree
-map <F8> :NERDTreeMirror<CR>
-map <F8> :NERDTreeToggle<CR>
-"o      open/close file/directory
-"go     almost same as o
-"q      close
-"?      help
-"p      upper directory
-"P      root directory
-"m      show file system menu
-"K      first node in current directory
-"J      last node in current directory
-
-
-" (8) AirLine
+" (7) AirLine
 let g:airline#extension#tabline#enabled = 1
 
 
-" (9) Indent Line
+" (8) Indent Line
 " Vim
 "let g:indentLine_color_term = 239
 "GVim
@@ -434,7 +416,7 @@ let g:airline#extension#tabline#enabled = 1
 "let g:indentLine_color_dark = 1 " (default: 2)
 
 
-" (10) Emment Web-Mode
+" (9) Emment Web-Mode
 let g:user_emmet_settings = {
 \  'php' : {
 \    'extends' : 'html',
@@ -452,7 +434,7 @@ let g:user_emmet_expandabbr_key='<c-e>'
 let g:use_emmet_complete_tag=1
 
 
-" (11)  Java Completion 2
+" (10)  Java Completion 2
 autocmd FileType java set omnifunc=javacomplete#Complete
 
 "if filereadable("AndroidManifest.xml")
