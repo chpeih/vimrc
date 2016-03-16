@@ -2,9 +2,9 @@
 ##My Powerful Vimrc
 
 There are three version:
-# (1) YouCompleteMeVimrc.vim with YouCompleteMe+UltiSnips
-# (2) NeocompleteVimrc.vim with neocomplete+clang_complete+Jedi+neosnippet+netsnippet-snippets
-# (3) BasicVimrc
+* (1) YouCompleteMeVimrc.vim with YouCompleteMe+UltiSnips
+* (2) NeocompleteVimrc.vim with neocomplete+clang_complete+Jedi+neosnippet+netsnippet-snippets
+* (3) BasicVimrc
 
 (1) use YouCompleteMe + UltiSnips for C/C++/Python auto-complete.
 (2) use Neocomplete + clang_complete + Jedi for C/C++/Python auto-complete.
