@@ -100,10 +100,6 @@ filetype plugin indent on    " required
 
 
 
-" Basic config
-source ~/.vim/BasicVimrc.vim
-
-
 
 
 " Plugin Configure
@@ -403,5 +399,13 @@ if has("win32")
 endif
 let g:clang_snippets = 0
 let g:clang_user_options = '-std=c++11'
-"let g:clang_hl_errors = 1
-"let g:clang_snippets = 1
+"let g:clang_hl_errors = 0
+"let g:clang_snippets = 0
+
+
+
+
+
+
+" Basic config
+source ~/.vim/BasicVimrc.vim

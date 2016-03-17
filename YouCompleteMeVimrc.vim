@@ -95,11 +95,6 @@ filetype plugin indent on    " required
 
 
 
-" Basic config
-souce ~/.vim/BasicVimrc.vim
-
-
-
 " Plugin Configure
 
 " (2) YouCompleteMe
@@ -132,6 +127,7 @@ nnoremap<leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 
 " (3) ultisnips
+" Ctrl-k is key mapping of neosnippet's snippet expand key
 let g:UltiSnipsExpandTrigger="<c-k>"
 let g:UltiSnipsJumpForwardTrigger="<c-n>"
 let g:UltiSnipsJumpBackwardTrigger="<c-p>"
@@ -153,6 +149,7 @@ if executable('ctags')
     set tags+=../../../../tags
     set tags+=../../../../../tags
     set tags+=../../../../../..tags
+    set tags+=../../../../../../../tags
 endif
 
 if executable('cscope')
@@ -171,6 +168,8 @@ if executable('cscope')
         cs add ../../../../../cscope.out
     elseif filereadable("../../../../../../cscope.out")
         cs add ../../../../../../cscope.out
+    elseif filereadable("../../../../../../../cscope.out")
+        cs add ../../../../../../../cscope.out
     endif
 endif
 
@@ -204,8 +203,8 @@ nmap <C-\>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 let g:DoxygenToolkit_briefTag_pre="@brief "
 let g:DoxygenToolkit_paramTag_pre="@param "
 let g:DoxygenToolkit_returnTag="@return "
-let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------"
-let g:DoxygenToolkit_blockFooter="--------------------------------------------------------------------------"
+let g:DoxygenToolkit_blockHeader="----------------------------------------------------------------------"
+let g:DoxygenToolkit_blockFooter="----------------------------------------------------------------------"
 let g:DoxygenToolkit_authorName="zhaochenyou16@gmail.com"
 let g:DoxygenToolkit_briefTag_className="yes"
 let g:DoxygenToolkit_briefTag_funcName="yes"
@@ -287,3 +286,8 @@ autocmd FileType java set omnifunc=javacomplete#Complete
 "    let g:JavaComplete_SourcesPath = "target/generated-sources/r"
 "endif
 
+
+
+
+" Basic Configure
+source ~/.vim/BasicVimrc.vim
