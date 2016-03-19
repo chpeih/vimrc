@@ -124,13 +124,15 @@ nnoremap<leader>gl :YcmCompleter GoToDeclaration<CR>
 nnoremap<leader>gf :YcmCompleter GoToDefinition<CR>
 nnoremap<leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
+let g:ycm_key_list_select_completion=['<c-n>', '<Down>', '<tab>']
+let g:ycm_key_list_previous_completion=['<c-p>', '<Up>', '<s-tab>']
 
 
 " (3) ultisnips
 " Ctrl-k is key mapping of neosnippet's snippet expand key
-let g:UltiSnipsExpandTrigger="<c-k>"
-let g:UltiSnipsJumpForwardTrigger="<c-n>"
-let g:UltiSnipsJumpBackwardTrigger="<c-p>"
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
