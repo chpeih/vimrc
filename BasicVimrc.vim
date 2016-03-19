@@ -97,7 +97,7 @@ set completeopt=menu
 "行号
 set number
 set numberwidth=5
-set lines=27
+set lines=35
 set columns=115
 "gvim下字体
 if has("win32")

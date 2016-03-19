@@ -130,7 +130,7 @@ let g:ycm_key_list_previous_completion=['<c-p>', '<Up>', '<s-tab>']
 
 " (3) ultisnips
 " Ctrl-k is key mapping of neosnippet's snippet expand key
-let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsExpandTrigger="<c-k>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
