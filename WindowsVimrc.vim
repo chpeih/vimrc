@@ -26,6 +26,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'vim-scripts/DoxygenToolkit.vim'
 " Fast Comment
 Plugin 'scrooloose/nerdcommenter'
+" EasyMotion
+Plugin 'easymotion/vim-easymotion'
 " Beautiful front end
 Plugin 'bling/vim-airline'
 " Buffer
@@ -34,6 +36,12 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'Yggdroot/indentLine'
 " mark
 Plugin 'vim-scripts/Mark--Karkat'
+" color
+Plugin 'altercation/vim-colors-solarized'
+
+" Language support
+" Completion
+Plugin 'ervandew/supertab'
 
 " Python 
 Plugin 'hdima/python-syntax'
