@@ -148,7 +148,7 @@ syntax enable
 " Color Theme
 if has("gui_running")
     colorscheme desert
-"    colorscheme solarized
+    colorscheme solarized
 endif
 let g:solarized_termcolors=256
 set background=dark
