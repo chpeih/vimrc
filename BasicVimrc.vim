@@ -101,7 +101,7 @@ set lines=35
 set columns=115
 "gvim下字体
 if has("win32")
-    set guifont=FreeMono:h12
+    set guifont=FreeMono:h11
     set guifont=Monaco:h10
 else 
     set guifont=FreeMono\ 11
@@ -121,20 +121,16 @@ set visualbell t_vb=
 "关闭beep
 au GuiEnter * set t_vb= 
 
-"c风格缩进
-set cindent 
-"智能缩进
-set smartindent 
-"自动缩进
+"缩进
+"set cindent 
+"set smartindent 
 set autoindent 
-"制表符为4
-set tabstop=4
-"统一缩进为4
-set softtabstop=4
-set shiftwidth=4 
-"用空格代替制表符
-set expandtab 
-set smarttab 
+
+"(1)使用space而不是tab
+"set softtabstop=4 shiftwidth=4 expandtab smarttab
+"(2)使用tab而不是space
+set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+
 "空格折叠
 set foldenable 
 set foldmethod=indent 
@@ -148,7 +144,7 @@ syntax enable
 " Color Theme
 if has("gui_running")
     colorscheme desert
-"    colorscheme solarized
+    colorscheme solarized
 endif
 let g:solarized_termcolors=256
 set background=dark
