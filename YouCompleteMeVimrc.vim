@@ -65,6 +65,7 @@ Plugin 'hail2u/vim-css3-syntax'
 " java complete
 " java complete is not good to use
 " Plugin 'artur-shaik/vim-javacomplete2'
+" Plugin 'adragomir/javacomplete'
 " PHP
 Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'StanAngeloff/php.vim'
@@ -86,6 +87,8 @@ Plugin 'plasticboy/vim-markdown'
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
+" thrift
+Plugin 'solarnz/thrift.vim'
 
 
 " All of your Plugins must be added before the following line
@@ -114,8 +117,8 @@ let g:ycm_collect_identifiers_from_comments_and_strings=1
 let g:ycm_seed_identifiers_with_syntax=1
 
 " complete by python2 or python3
-"let g:ycm_python_binary_path="/usr/bin/python2"
-let g:ycm_python_binary_path="/usr/bin/python3"
+let g:ycm_python_binary_path="/usr/bin/python2"
+"let g:ycm_python_binary_path="/usr/bin/python3"
 " syntax_python
 let python_highlight_all = 1
 
@@ -281,8 +284,9 @@ let g:user_emmet_expandabbr_key='<c-e>'
 let g:use_emmet_complete_tag=1
 
 
-" (10)  Java Completion 2
-autocmd FileType java set omnifunc=javacomplete#Complete
+" (10)  Java Completion
+autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+autocmd Filetype java map <leader>b :call javacomplete#GoToDefinition()<CR>
 
 "if filereadable("AndroidManifest.xml")
 "    let g:JavaComplete_SourcesPath = "target/generated-sources/r"
