@@ -285,8 +285,8 @@ let g:use_emmet_complete_tag=1
 
 
 " (10)  Java Completion
-autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-autocmd Filetype java map <leader>b :call javacomplete#GoToDefinition()<CR>
+" autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+" autocmd Filetype java map <leader>b :call javacomplete#GoToDefinition()<CR>
 
 "if filereadable("AndroidManifest.xml")
 "    let g:JavaComplete_SourcesPath = "target/generated-sources/r"
