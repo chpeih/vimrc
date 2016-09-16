@@ -97,8 +97,8 @@ set completeopt=menu
 "行号
 set number
 set numberwidth=5
-set lines=35
-set columns=115
+set lines=45
+set columns=155
 "gvim下字体
 if has("win32")
     set guifont=FreeMono:h11
@@ -127,9 +127,9 @@ au GuiEnter * set t_vb=
 set autoindent 
 
 "(1)使用space而不是tab
-"set softtabstop=4 shiftwidth=4 expandtab smarttab
+set softtabstop=4 shiftwidth=4 expandtab smarttab
 "(2)使用tab而不是space
-set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+"set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
 
 "空格折叠
 set foldenable 
