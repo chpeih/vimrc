@@ -122,8 +122,8 @@ set visualbell t_vb=
 au GuiEnter * set t_vb= 
 
 "缩进
-"set cindent 
-"set smartindent 
+set cindent 
+set smartindent 
 set autoindent 
 
 "(1)使用space而不是tab
