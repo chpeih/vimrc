@@ -102,9 +102,9 @@ filetype plugin indent on    " required
 
 " (2) YouCompleteMe
 " disable YCM in lua file
-let g:ycm_filetype_blacklist = {
-\  'lua' : 1
-\}
+"let g:ycm_filetype_blacklist = {
+"\  'lua' : 1
+"\}
 " YCM need python2
 "let g:ycm_path_to_python_interpreter='/usr/bin/python'
 let g:ycm_path_to_python_interpreter='C:/software/Python27/python'
