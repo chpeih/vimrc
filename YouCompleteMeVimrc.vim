@@ -101,6 +101,10 @@ filetype plugin indent on    " required
 " Plugin Configure
 
 " (2) YouCompleteMe
+" fix YCM crash in lua file, just disable it
+autocmd FileType lua let g:enable_ycm_at_startup = 0
+autocmd FileType lua let g:loaded_youcompleteme = 1
+autocmd FileType lua let b:ycm_largefile=1
 " YCM need python2
 "let g:ycm_path_to_python_interpreter='/usr/bin/python'
 let g:ycm_path_to_python_interpreter='C:/software/Python27/python'
