@@ -299,6 +299,8 @@ let g:use_emmet_complete_tag=1
 "endif
 
 
+" (11) disable indentLine disable quotes in json file
+let g:indentLine_setConceal = 0
 
 
 " Basic Configure
