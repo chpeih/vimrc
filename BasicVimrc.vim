@@ -127,7 +127,7 @@ set smartindent
 set autoindent 
 
 "(1)使用space而不是tab
-set softtabstop=4 shiftwidth=4 expandtab smarttab
+set tabstop=4 softtabstop=4 shiftwidth=4 expandtab smarttab
 "(2)使用tab而不是space
 "set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
 "set noexpandtab tabstop=4 shiftwidth=4
